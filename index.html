@@ -2,10 +2,10 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
-        	<title>untitled</title>
-        	<script src="./js/jquery.js"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <title>untitled</title>
+        <script src="./js/jquery.js"></script>
 		<script type="text/javascript" src="./js/documentControl.js"></script>
 	</head>
 	<body id="body">
@@ -24,7 +24,8 @@
 				<button class="contryBtn" id="IST" onclick="primFunction(this)">이스탄불</button>
 				<p id="apBtnPan">
 					<br>
-					<button class="contryBtn" id="INP" onclick="applyLoction()">추가 입력</button>
+                    <button class="contryBtn" id="INP" onclick="applyLoction()">추가 입력</button>
+                    <input type="text" id="ipt" maxlength="8" size="10" onchange="applyButton(this)" style ="display: none"></input>
 				</p>
 			</p>
 		</div>
