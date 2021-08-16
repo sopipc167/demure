@@ -87,7 +87,7 @@ var discriptionText={}
 	discriptionText["프리모르스키 아쿠아리움"]="수족관이다";
 					
 function applyLoction(){
-	getElementById("ipt").style.display="inline";
+	document.getElementById("ipt").style.display="inline";
 	}
 function applyButton(ipt){
 	newbtn=document.createElement("button");
