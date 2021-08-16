@@ -91,11 +91,11 @@ function applyLoction(){
 	}
 function applyButton(ipt){
 	newbtn=document.createElement("button");
-	const val=document.getElementById("ipt").value;
+	const val=ipt.value;
 	newbtn.setAttribute("id","val");
 	newbtn.innerText=val
 	document.getElementById("btnpanel").appendChild(newbtn);
-	document.getElementById("ipt").style.diplay="none";
+	ipt.style.diplay="none";
 	}
 function primFunction(btn){
 	releaseButton();
