@@ -142,19 +142,18 @@ function createButtons(btn){
 	var newBtn7=document.createElement("button");
 	var newBtn8=document.createElement("button");
 	var newBtn9=document.createElement("button");
-	newDiv.setAttribute("style","border:1px solid black; padding:4px; width:90%; height:50%; margin:0 auto;");
 	newDiv.setAttribute("id","optionPanel");
 	newDiv.setAttribute("align","middle");
-	newBtn0.setAttribute("style","width:20%; height:20%;");
-	newBtn1.setAttribute("style","width:20%; height:20%;");
-	newBtn2.setAttribute("style","width:20%; height:20%;");
-	newBtn3.setAttribute("style","width:20%; height:20%;");
-	newBtn4.setAttribute("style","width:20%; height:20%;");
-	newBtn5.setAttribute("style","width:20%; height:20%;");
-	newBtn6.setAttribute("style","width:20%; height:20%;");
-	newBtn7.setAttribute("style","width:20%; height:20%;");
-	newBtn8.setAttribute("style","width:20%; height:20%;");
-	newBtn9.setAttribute("style","width:20%; height:20%;");
+	newBtn0.setAttribute("class","optionBtn");
+	newBtn1.setAttribute("class","optionBtn");
+	newBtn2.setAttribute("class","optionBtn");
+	newBtn3.setAttribute("class","optionBtn");
+	newBtn4.setAttribute("class","optionBtn");
+	newBtn5.setAttribute("class","optionBtn");
+	newBtn6.setAttribute("class","optionBtn");
+	newBtn7.setAttribute("class","optionBtn");
+	newBtn8.setAttribute("class","optionBtn");
+	newBtn9.setAttribute("class","optionBtn");
 	newBtn0.setAttribute("id","option0");
 	newBtn1.setAttribute("id","option1");
 	newBtn2.setAttribute("id","option2");
@@ -248,7 +247,6 @@ function setLocation(btn){
 function addDiscription(num){
 	var panel = document.getElementById('optionPanel');
 	var paragraph=document.createElement("p");
-	paragraph.setAttribute("style","border:1px solid black; padding:5px; width:85%; height:40%; white-space: pre-line;");
 	paragraph.setAttribute("id","board");
 	panel.appendChild(paragraph);
 	paragraph.setAttribute("align","middle");
