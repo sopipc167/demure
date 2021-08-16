@@ -95,7 +95,7 @@ function applyButton(ipt){
 	newbtn.setAttribute("id","val");
 	newbtn.innerText=val
 	document.getElementById("btnpanel").appendChild(newbtn);
-	ipt.style.diplay="none";
+	ipt.style.display="none";
 	}
 function primFunction(btn){
 	releaseButton();
