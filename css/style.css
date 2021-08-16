@@ -1,9 +1,9 @@
 #body {
     background-color:yellowgreen;
-    align-content: center;
+    align:middle;
 }
 #btnpanel {
-    align-content: center;
+    align:middle;
 }
 .contryBtn{
     width:20%; 
@@ -34,11 +34,11 @@ h1{
     text-align:"middle";
 }
 p{
-    align-content: center;
+    align:middle;
     text-align:"middle";
 }
 .buttonDiv{
-    align-content: center;
+    align:middle;
     border:1px solid black; 
     padding:5px;
     width:60%;
