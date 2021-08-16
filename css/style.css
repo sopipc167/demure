@@ -34,9 +34,11 @@ h1{
     text-align:"middle";
 }
 p{
+    align-content: center;
     text-align:"middle";
 }
 .buttonDiv{
+    align-content: center;
     border:1px solid black; 
     padding:5px;
     width:60%;
