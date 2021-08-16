@@ -1,0 +1,44 @@
+#body {
+    color:yellowgreen;
+}
+#btnpanel {
+    align-content: center;
+}
+.contryBtn{
+    width:20%; 
+    height:30%;
+}
+.optionBtn{
+    width:20%;
+    height:20%;
+}
+#val{
+    color:blue;
+}
+#optionPanel{
+    border:1px solid black;
+    padding:4px; 
+    width:90%; 
+    height:50%; 
+    margin:0 auto;
+}
+#board{
+    border:1px solid black; 
+    padding:5px; 
+    width:85%; 
+    height:40%; 
+    white-space: pre-line;
+}
+h1{
+    text-align:"middle";
+}
+p{
+    text-align:"middle";
+}
+.buttonDiv{
+    border:1px solid black; 
+    padding:5px;
+    width:60%;
+    height:30%;
+    margin:0 auto;
+}
