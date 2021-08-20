@@ -96,6 +96,7 @@ function applyButton(ipt){
 	newbtn.innerText=val
 	document.getElementById("btnpanel").appendChild(newbtn);
 	ipt.style.display="none";
+	ipt.innerHTML="";
 	}
 function primFunction(btn){
 	releaseButton();
