@@ -134,6 +134,7 @@ function createButtons(btn){
 	document.getElementById('option7').style.display="inline";
 	document.getElementById('option8').style.display="inline";
 	document.getElementById('option9').style.display="inline";
+	document.getElementById("optionPanel").style.display="block";
 	alterButtons(btn);
 	}
 function alterButtons(btn){
