@@ -3,10 +3,11 @@
 	<head>
 		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <style type="text/css">
+        </style>
+        <script type="text/javascript">
+        </script>
         <title>untitled</title>
-        <script src="./js/jquery.js"></script>
-		<script type="text/javascript" src="./js/documentControl.js"></script>
 	</head>
 	<body id="body">
 		<h1>Unkown String Wanted</h1>
@@ -23,11 +24,22 @@
 				<button class="contryBtn" id="NGK"  onclick="primFunction(this)">나가사키</button>
 				<button class="contryBtn" id="IST" onclick="primFunction(this)">이스탄불</button>
 				<p id="apBtnPan">
-					<br>
-                    <button class="contryBtn" id="INP" onclick="applyLoction()">추가 입력</button>
+                    <button class="contryBtn" id="INP" onclick="applyLoction()" style="display:block">추가 입력</button>
                     <input type="text" id="ipt" maxlength="8" size="10" onchange="applyButton(this)" style ="display: none"></input>
 				</p>
 			</p>
-		</div>
+        </div>
+        <div id="optionPanel" > 
+            <button class="optinBtn" id="option0" style="display: none"></button>
+            <button class="optinBtn" id="option1" style="display: none"></button>
+            <button class="optinBtn" id="option2" style="display: none"></button>
+            <button class="optinBtn" id="option3" style="display: none"></button>
+            <button class="optinBtn" id="option4" style="display: none"></button>
+            <button class="optinBtn" id="option5" style="display: none"></button>
+            <button class="optinBtn" id="option6" style="display: none"></button>
+            <button class="optinBtn" id="option7" style="display: none"></button>
+            <button class="optinBtn" id="option8" style="display: none"></button>
+            <button class="optinBtn" id="option9" style="display: none"></button>
+        </div>
 	</body>
 </html>
