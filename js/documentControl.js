@@ -124,53 +124,6 @@ function releaseButton(){
 	document.getElementById('NGK').disabled=false;
 	}
 function createButtons(btn){
-	var body=document.getElementById("body");
-	var newDiv=document.createElement("div");
-	var newBtn0=document.createElement("button");
-	var newBtn1=document.createElement("button");
-	var newBtn2=document.createElement("button");
-	var newEnter=document.createElement("p");
-	var newBtn3=document.createElement("button");
-	var newBtn4=document.createElement("button");
-	var newBtn5=document.createElement("button");
-	var newBtn6=document.createElement("button");
-	var newBtn7=document.createElement("button");
-	var newBtn8=document.createElement("button");
-	var newBtn9=document.createElement("button");
-	newDiv.setAttribute("id","optionPanel");
-	newDiv.setAttribute("align","middle");
-	newBtn0.setAttribute("class","optionBtn");
-	newBtn1.setAttribute("class","optionBtn");
-	newBtn2.setAttribute("class","optionBtn");
-	newBtn3.setAttribute("class","optionBtn");
-	newBtn4.setAttribute("class","optionBtn");
-	newBtn5.setAttribute("class","optionBtn");
-	newBtn6.setAttribute("class","optionBtn");
-	newBtn7.setAttribute("class","optionBtn");
-	newBtn8.setAttribute("class","optionBtn");
-	newBtn9.setAttribute("class","optionBtn");
-	newBtn0.setAttribute("id","option0");
-	newBtn1.setAttribute("id","option1");
-	newBtn2.setAttribute("id","option2");
-	newBtn3.setAttribute("id","option3");
-	newBtn4.setAttribute("id","option4");
-	newBtn5.setAttribute("id","option5");
-	newBtn6.setAttribute("id","option6");
-	newBtn7.setAttribute("id","option7");
-	newBtn8.setAttribute("id","option8");
-	newBtn9.setAttribute("id","option9");
-	body.appendChild(newDiv);
-	newDiv.appendChild(newBtn0);
-	newDiv.appendChild(newBtn1);
-	newDiv.appendChild(newBtn2);
-	newDiv.appendChild(newBtn3);
-	newDiv.appendChild(newBtn4);
-	newDiv.appendChild(newEnter);
-	newDiv.appendChild(newBtn5);
-	newDiv.appendChild(newBtn6);
-	newDiv.appendChild(newBtn7);
-	newDiv.appendChild(newBtn8);
-	newDiv.appendChild(newBtn9);
 	alterButtons(btn);
 	}
 function alterButtons(btn){
