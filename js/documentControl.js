@@ -124,6 +124,16 @@ function releaseButton(){
 	document.getElementById('NGK').disabled=false;
 	}
 function createButtons(btn){
+	document.getElementById('option0').style.display="inline";
+	document.getElementById('option1').style.display="inline";
+	document.getElementById('option2').style.display="inline";
+	document.getElementById('option3').style.display="inline";
+	document.getElementById('option4').style.display="inline";
+	document.getElementById('option5').style.display="inline";
+	document.getElementById('option6').style.display="inline";
+	document.getElementById('option7').style.display="inline";
+	document.getElementById('option8').style.display="inline";
+	document.getElementById('option9').style.display="inline";
 	alterButtons(btn);
 	}
 function alterButtons(btn){
