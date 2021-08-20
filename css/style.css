@@ -37,6 +37,9 @@ p{
     align:middle;
     text-align:"middle";
 }
+iframe{
+    border: 1px solid black;
+}
 .buttonDiv{
     align:middle;
     border:1px solid black; 
