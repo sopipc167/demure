@@ -7,25 +7,25 @@
         <script type="text/javascript" src="js/documentControl.js"></script>
         <title>untitled</title>
 	</head>
-	<body id="body">
-		<h1>Unkown String Wanted</h1>
-		<iframe style="display: block" id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.245520924971!2d126.97469751588231!3d37.572835879796656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2eb3e16f081%3A0x60277c9a54a3d4d!2z7IS47KKF64yA7JmVIOuPmeyDgQ!5e0!3m2!1sko!2skr!4v1597808054575!5m2!1sko!2skr" allowfullscreen="" aria-hidden="false" tabindex="0" width="600" height="450" frameborder="0">
-		</iframe>
-		<br>
-		<div class="buttonDiv" style="display: block">
-			<p id="btnpanel">
-				<button class="contryBtn" id="VLD" onclick="primFunction(this)">블라디보스토크</button>
-				<button class="contryBtn" id="IRK" onclick="primFunction(this)">이르쿠츠크</button>
-				<button class="contryBtn" id="TBI" onclick="primFunction(this)">타이베이</button>
-				<button class="contryBtn" id="NGK"  onclick="primFunction(this)">나가사키</button>
-				<button class="contryBtn" id="IST" onclick="primFunction(this)">이스탄불</button>
-				<p id="apBtnPan">
-                    <button class="contryBtn" id="INP" onclick="applyLoction()" style="display:block">추가 입력</button>
-                    <input type="text" id="ipt" maxlength="8" size="10" onchange="applyButton(this)" style ="display: none"></input>
+	<body>
+		<h1 id="headline">환영합니다.</h1>
+		<div class="wrapper">
+			<iframe style="display: block" id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.245520924971!2d126.97469751588231!3d37.572835879796656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2eb3e16f081%3A0x60277c9a54a3d4d!2z7IS47KKF64yA7JmVIOuPmeyDgQ!5e0!3m2!1sko!2skr!4v1597808054575!5m2!1sko!2skr" allowfullscreen="" aria-hidden="false" tabindex="0" width="600" height="450" frameborder="0">
+			</iframe>
+			<div class="buttonDiv" style="display: block">
+				<p id="btnpanel">
+					<button class="contryBtn" id="VLD" onclick="primFunction(this)">블라디보스토크</button>
+					<button class="contryBtn" id="IRK" onclick="primFunction(this)">이르쿠츠크</button>
+					<button class="contryBtn" id="TBI" onclick="primFunction(this)">타이베이</button>
+					<button class="contryBtn" id="NGK"  onclick="primFunction(this)">나가사키</button>
+					<button class="contryBtn" id="IST" onclick="primFunction(this)">이스탄불</button>
+					<p id="apBtnPan">
+						<button class="contryBtn" id="INP" onclick="applyLoction()" style="display:block">추가 입력</button>
+						<input type="text" id="ipt" maxlength="8" size="10" onchange="applyButton(this)" style ="display: none"></input>
+					</p>
 				</p>
-			</p>
+			</div>
 		</div>
-		<br>
         <div id="optionPanel" style="display: none;" > 
             <button class="optinBtn" id="option0" style="display: none"></button>
             <button class="optinBtn" id="option1" style="display: none"></button>
