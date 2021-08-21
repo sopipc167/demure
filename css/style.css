@@ -1,9 +1,9 @@
 #body {
     background-color:yellowgreen;
-    align:middle;
+    margin: 0 auto;
 }
 #btnpanel {
-    align:middle;
+    margin: 0 auto;
 }
 .contryBtn{
     width:20%; 
@@ -34,14 +34,15 @@ h1{
     text-align:"middle";
 }
 p{
-    align:middle;
+    margin: 0 auto;
     text-align:"middle";
 }
 iframe{
     border: 1px solid black;
+    margin: 0 auto;
 }
 .buttonDiv{
-    align:middle;
+    margin: 0 auto;
     border:1px solid black; 
     padding:5px;
     width:60%;
