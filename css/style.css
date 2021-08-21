@@ -1,11 +1,15 @@
-#body {
+body {
     background-color: darkgrey;
+}
+.wrapper{
+    display: flex;
+    padding: 0%;
 }
 #btnpanel {
     margin: 0 auto;
 }
 .contryBtn{
-    width:130px; 
+    width:80%; 
     height:65px;
     font-size: 12pt;
     font-weight: bold;
@@ -54,7 +58,7 @@
     height:40%; 
     white-space: pre-line;
 }
-h1{
+#headline{
     text-align:"middle";
     margin: 0 auto;
     display: inline-block;
@@ -64,17 +68,86 @@ p{
     text-align:"middle";
 }
 #googleMap{
-    float: left;
+    float: none;
     border: 1px solid black;
     margin: 0 auto;
     display: block;
+    width: 80%;
 }
 .buttonDiv{
     float: left;
     margin: 0 auto;
     border:1px solid black; 
     padding:5px;
-    width:150px;
-    height:30%;
+    width:20%;
+    height:90%;
     display: block;
+}
+@media (min-width: 1400px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+    }
+    .contryBtn{
+        width:15%; 
+        height:65px;
+        font-size: 12pt;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px gray;
+        color: salmon;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline;
+    }
+    #board{
+        border:1px solid black; 
+        padding:5px; 
+        width:85%; 
+        height:40%; 
+        white-space: pre-line;
+    }
+    .buttonDiv{
+        border:1px solid black; 
+        padding:5px;
+        width: 80%;
+        height:90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 1000px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 0%;
+    }
+    .contryBtn{
+        width:15%; 
+        height:65px;
+        font-size: 12pt;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px gray;
+        color: salmon;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: inline;
+    }
+    #board{
+        border:1px solid black; 
+        padding:5px; 
+        width:85%; 
+        height:40%; 
+        white-space: pre-line;
+    }
+    .buttonDiv{
+        margin: 0 auto;
+        border:1px solid black; 
+        padding:5px;
+        width: 80%;
+        height:90%;
+        display: block;
+    }
 }
