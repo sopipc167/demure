@@ -85,7 +85,6 @@ var discriptionText={}
 	discriptionText["레스토랑 주마"]="킹크랩 전문 레스토랑이다";
 	discriptionText["블라디보스토크 굼"]="러시아의 백화점을 굼이라고 한다";
 	discriptionText["프리모르스키 아쿠아리움"]="수족관이다";
-					
 function applyLoction(){
 	document.getElementById("ipt").style.display="inline";
 	}
@@ -118,23 +117,11 @@ function primFunction(btn){
 	setLocation(btn);
 	}
 function releaseButton(){
-	document.getElementById('VLD').disabled=false;
-	document.getElementById('IRK').disabled=false;
-	document.getElementById('TBI').disabled=false;
-	document.getElementById('NGK').disabled=false;
+	$("button:disabled").attr("disabled",false);
 	}
 function createButtons(btn){
-	document.getElementById('option0').style.display="inline";
-	document.getElementById('option1').style.display="inline";
-	document.getElementById('option2').style.display="inline";
-	document.getElementById('option3').style.display="inline";
-	document.getElementById('option4').style.display="inline";
-	document.getElementById('option5').style.display="inline";
-	document.getElementById('option6').style.display="inline";
-	document.getElementById('option7').style.display="inline";
-	document.getElementById('option8').style.display="inline";
-	document.getElementById('option9').style.display="inline";
-	document.getElementById("optionPanel").style.display="block";
+	$("#optionPanel").css("display","block");
+	$(".optinBtn").css("display","inline");
 	alterButtons(btn);
 	}
 function alterButtons(btn){
