@@ -16,19 +16,19 @@
     display: block;
 }
 #VLD{
-    background-image: url("/img/Vlad.jpg");
+    background-image: url("img/Vlad.jpg");
 }
 #NGK{
-    background-image: url("/img/Ngsk.png");
+    background-image: url("img/Ngsk.png");
 }
 #IRK{
-    background-image: url("/img/Irkt.jpg");
+    background-image: url("img/Irkt.jpg");
 }
 #IST{
-    background-image: url("/img/Istb.jpeg");
+    background-image: url("img/Istb.jpeg");
 }
 #TBI{
-    background-image: url("/img/Taib.jpg");
+    background-image: url("img/Taib.jpg");
 }
 .optionBtn{
     width:20%;
