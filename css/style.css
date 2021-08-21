@@ -1,13 +1,33 @@
 #body {
-    background-color:yellowgreen;
-    margin: 0 auto;
+    background-color: darkgrey;
 }
 #btnpanel {
     margin: 0 auto;
 }
 .contryBtn{
-    width:20%; 
-    height:30%;
+    width:130px; 
+    height:65px;
+    font-size: 12pt;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px gray;
+    color: salmon;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#VLD{
+    background-image: url("Vlad.jpg");
+}
+#NGK{
+    background-image: url("Ngsk.png");
+}
+#IRK{
+    background-image: url("Irkt.jpg");
+}
+#IST{
+    background-image: url("Istb.jpeg");
+}
+#TBI{
+    background-image: url("Taib.jpg");
 }
 .optionBtn{
     width:20%;
@@ -32,6 +52,8 @@
 }
 h1{
     text-align:"middle";
+    margin: 0 auto;
+    display: inline-block;
 }
 p{
     margin: 0 auto;
