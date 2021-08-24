@@ -4,6 +4,7 @@ var typingIdx=0;
 var tyInt;
 var typingTxt=["Unknown","String","Wanted"];
 var typingBool = false;
+/*재발 작동되라 제발*/
 $(document).ready(function(){
 	$.ajax({
 		url:"js/test.txt",
