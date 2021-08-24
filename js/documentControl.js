@@ -4,6 +4,16 @@ var typingIdx=0;
 var tyInt;
 var typingTxt=["Unknown","String","Wanted"];
 var typingBool = false;
+$(document).ready(function(){
+	$.ajax({
+		url:"test.txt",
+		method:"GET",
+		dataType:"text",
+		success: function(data){
+			$("h1").html(data);
+		}
+	})
+})
 var mapURLDic={}
 //블라디보스토크 관련 지도
 	mapURLDic["블라디보스토크"]="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93121.27036802335!2d131.88341839101878!3d43.166690846552264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb39cba5249d485%3A0x186704d4dd967e35!2z65-s7Iuc7JWEIO2UhOumrOuqqOultOyKpO2CpCDtgazroIjsnbQg67iU652865SU67O07Iqk7Yag7YGs!5e0!3m2!1sko!2skr!4v1627801341813!5m2!1sko!2skr";
