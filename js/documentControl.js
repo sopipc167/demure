@@ -6,7 +6,7 @@ var typingTxt=["Unknown","String","Wanted"];
 var typingBool = false;
 $(document).ready(function(){
 	$.ajax({
-		url:"test.txt",
+		url:"js/test.txt",
 		method:"GET",
 		dataType:"text",
 		success: function(data){
