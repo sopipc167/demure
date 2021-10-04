@@ -4,77 +4,19 @@ var typingIdx=0;
 var tyInt;
 var typingTxt=["Unknown","String","Wanted"];
 var typingBool = false;
+var mapURLDic={};
 /*재발 작동되라 제발*/
 $(document).ready(function(){
 	$.ajax({
-		url:"js/test.txt",
+		url:"js/test.json",
 		method:"GET",
-		dataType:"text",
+		dataType:"json",
 		success: function(data){
-			$("h1").html(data);
+			mapURLDic=JSON.parse(data);
 		}
 	})
 })
-var mapURLDic={}
-//블라디보스토크 관련 지도
-	mapURLDic["블라디보스토크"]="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93121.27036802335!2d131.88341839101878!3d43.166690846552264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb39cba5249d485%3A0x186704d4dd967e35!2z65-s7Iuc7JWEIO2UhOumrOuqqOultOyKpO2CpCDtgazroIjsnbQg67iU652865SU67O07Iqk7Yag7YGs!5e0!3m2!1sko!2skr!4v1627801341813!5m2!1sko!2skr";
-	mapURLDic["블라디보스토크 역"]="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23299.348562363102!2d131.8924688820923!3d43.11673249482823!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48b854dd68887a40!2z67iU652865SU67O07Iqk7Yag7YGs7Jet!5e0!3m2!1sko!2skr!4v1627986988380!5m2!1sko!2skr";
-	mapURLDic["독수리 전망대"]="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186615.23322277566!2d131.81496712459958!3d43.04431352501866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb3920ad875b8bb%3A0x3b294a3c48d8ab54!2z64-F7IiY66as7KCE66ed64yAIO2RuOuLiOy_qOudvA!5e0!3m2!1sko!2skr!4v1628399632023!5m2!1sko!2skr";
-	mapURLDic["해적커피"]="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2912.363959280268!2d131.8794038156923!3d43.117879894898095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb38d2c470b658f%3A0x232059c57bdec2f8!2z7ZW07KCB7Lm07Y6Y!5e0!3m2!1sko!2skr!4v1628399732213!5m2!1sko!2skr";
-	mapURLDic["니콜라이황태자 개선문"]="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11650.383696535868!2d131.8837944714138!3d43.113006047874414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb3917868212a5f%3A0xea7009c8807f262f!2z64uI7L2c65287J207Zmp7YOc7J6Q6rCc7ISg66y4!5e0!3m2!1sko!2skr!4v1628399822593!5m2!1sko!2skr";
-	mapURLDic["혁명광장"]="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2912.4905613669007!2d131.88302631569232!3d43.115219895068435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb38ddda3c06e6f%3A0x5dc7e86c77ef41d7!2z7KSR7JWZ6rSR7J6lIO2Ygeuqheq0keyepQ!5e0!3m2!1sko!2skr!4v1628399852747!5m2!1sko!2skr";
-	mapURLDic["댑 버거"]="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2912.4599394678144!2d131.87988151569218!3d43.115863295027204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb38df0a8f22b35%3A0x8b6e0d0b72f2e7ae!2z64yR67KE6rGw!5e0!3m2!1sko!2skr!4v1628399902996!5m2!1sko!2skr";
-	mapURLDic["레스토랑 주마"]="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.8859618531346!2d131.87779643410627!3d43.12063950426926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdffef2b5f3afa030!2z7KO866eIIOugiOyKpO2GoOuekQ!5e0!3m2!1sko!2skr!4v1628399949211!5m2!1sko!2skr";
-	mapURLDic["블라디보스토크 굼"]="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2912.4795957803353!2d131.88574851569226!3d43.115450295053684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb38df6fba8d8e3%3A0x9bc248f6cb501bf1!2z67iU652865SU67O07Iqk7Yag7YGsIOq1vCDrsLHtmZTsoJA!5e0!3m2!1sko!2skr!4v1628399995770!5m2!1sko!2skr";
-	mapURLDic["프리모르스키 아쿠아리움"]="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11671.374985120538!2d131.91781177148263!3d43.00262465121116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc3da4144dc3a7d94!2z7ZSE66as66qo66W07Iqk7YKkIOyVhOy_oOyVhOumrOybgA!5e0!3m2!1sko!2skr!4v1628400058638!5m2!1sko!2skr";
 
-	//나가사키 관련 지도
-	mapURLDic["나가사키"]="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d180572.5817668666!2d129.6714726085329!3d32.75818847779204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35154c548418da67%3A0x8bf7a6edca32cc93!2z7J2867O4IOuCmOqwgOyCrO2CpO2YhCDrgpjqsIDsgqztgqTsi5w!5e0!3m2!1sko!2skr!4v1627802647005!5m2!1sko!2skr"
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-
-	//타이페이 관련 지도
-	mapURLDic["타이베이"]="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231263.22577116164!2d121.42141734313677!3d25.085340344714425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac6b61dbbd8b%3A0xbcd1baad5c06a482!2z64yA66eMIO2DgOydtOuyoOydtA!5e0!3m2!1sko!2skr!4v1628403052970!5m2!1sko!2skr";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-
-	//이르쿠츠크 관련 지도
-	mapURLDic["이르쿠츠크"]="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d312502.5862606952!2d104.1741329!3d52.2719594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5da83ad353e2f665%3A0x31d6cd1456d8e94e!2z65-s7Iuc7JWEIOydtOultOy_oOy4oOy5tOyVvCDsmKTruJTrnpjsiqTtirgg7J2066W07L-g7Lig7YGs!5e0!3m2!1sko!2skr!4v1627802832470!5m2!1sko!2skr";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-			
-	//이스탄불 관련 지도
-	mapURLDic["이스탄불"]="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770809.0846015095!2d28.451771181959312!3d41.003964449432885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2z7YSw7YKkIOydtOyKpO2DhOu2iCDso7wg7J207Iqk7YOE67aI!5e0!3m2!1sko!2skr!4v1628403079737!5m2!1sko!2skr";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
-	mapURLDic[""]="";
 
 var referLinkDic={}
 	//VLD
