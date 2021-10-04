@@ -1,6 +1,21 @@
 body {
     background-color: darkgrey;
 }
+header{
+    background-color: aqua;
+}
+h1{
+    display: flex;
+    text-align: center;
+}
+nav{
+    background-color: firebrick;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .wrapper{
     display: flex;
     padding: 0%;
