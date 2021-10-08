@@ -13,6 +13,7 @@ $(document).ready(function(){
 		dataType:"json",
 		success: function(data){
 			mapURLDic=data;
+			console.log(mapURLDic);
 		}
 	})
 })
