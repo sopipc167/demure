@@ -12,7 +12,7 @@ $(document).ready(function(){
 		method:"GET",
 		dataType:"json",
 		success: function(data){
-			mapURLDic=JSON.parse(data);
+			mapURLDic=data;
 		}
 	})
 })
