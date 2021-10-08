@@ -8,7 +8,7 @@ var mapURLDic={};
 /*재발 작동되라 제발*/
 $(document).ready(function(){
 	$.ajax({
-		url:"js/test.json",
+		url:"test.json",
 		method:"GET",
 		dataType:"json",
 		success: function(data){
