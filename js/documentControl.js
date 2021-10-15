@@ -18,7 +18,7 @@ $(document).ready(function(){
 		}
 	})
 	$.ajax({
-		url:"json/textDiscription.json",
+		url:"json/textDiscriptions.json",
 		method:"GET",
 		dataType:"json",
 		success: function(data){
