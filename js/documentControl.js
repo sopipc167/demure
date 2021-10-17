@@ -15,15 +15,15 @@ $(document).ready(function(){
 		success: function(data){
 			mapURLDic=data;
 			console.log(mapURLDic);
-		}
-	})
-	$.ajax({
-		url:"json/textDiscriptions.json",
-		method:"GET",
-		dataType:"json",
-		success: function(data){
-			discriptionText=data;
-			console.log(mapURLDic);
+			$.ajax({
+				url:"json/textDiscriptions.json",
+				method:"GET",
+				dataType:"json",
+				success: function(data){
+					discriptionText=data;
+					console.log(mapURLDic);
+				}
+			})
 		}
 	})
 })
