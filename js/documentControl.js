@@ -15,7 +15,9 @@ $(document).ready(function(){
 		success: function(data){
 			mapURLDic=data;
 			console.log(mapURLDic);
-			$.ajax({
+		}
+	})
+	$.ajax({
 				url:"json/textDiscriptions.json",
 				method:"GET",
 				dataType:"json",
@@ -24,8 +26,6 @@ $(document).ready(function(){
 					console.log(mapURLDic);
 				}
 			})
-		}
-	})
 })
 var referLinkDic={}
 	//VLD
