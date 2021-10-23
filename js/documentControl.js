@@ -12,20 +12,22 @@ $(document).ready(function(){
 		url:"json/mapURLs.json",
 		method:"GET",
 		dataType:"json",
+		async:false,
 		success: function(data){
 			mapURLDic=data;
 			console.log(mapURLDic);
 		}
 	})
 	$.ajax({
-				url:"json/textDiscriptions.json",
-				method:"GET",
-				dataType:"json",
-				success: function(data){
-					discriptionText=data;
-					console.log(mapURLDic);
-				}
-			})
+		url:"json/textDiscriptions.json",
+		method:"GET",
+		dataType:"json",
+		async:false,
+		success: function(data){
+			discriptionText=data;
+			console.log(mapURLDic);
+		}
+	})
 })
 var referLinkDic={}
 	//VLD
